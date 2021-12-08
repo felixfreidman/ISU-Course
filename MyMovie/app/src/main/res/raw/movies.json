@@ -1,0 +1,45 @@
+
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "The Shawshank Redemption",
+      "image": "https://www.imdb.com/title/tt0111161/mediaviewer/rm10105600/?ref_=tt_ov_i",
+      "director": "Frank Darabont",
+      "actors": ["Tim Robbins", "Morgan Freeman"],
+      "genre": "Drama"
+    },
+    {
+      "id": 2,
+      "name": "The Godfather",
+      "image": "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/?ref_=tt_ov_i",
+      "director": "Francis Ford Coppola",
+      "actors": ["Marlon Brando", "Al Pacino"],
+      "genre": "Drama"
+    },
+    {
+      "id": 3,
+      "name": "The Dark Knight",
+      "image": "https://www.imdb.com/title/tt0468569/mediaviewer/rm4023877632/?ref_=tt_ov_i",
+      "director": "Christopher Nolan",
+      "actors": ["Christian Bale", "Heath Ledger"],
+      "genre": "Drama"
+    },
+    {
+      "id": 4,
+      "name": "Schindler's List",
+      "image": "https://www.imdb.com/title/tt0108052/mediaviewer/rm1610023168/?ref_=tt_ov_i",
+      "director": "Steven Spielberg",
+      "actors": ["Liam Neeson", "Ralph Fiennes"],
+      "genre": "Drama"
+    },
+    {
+      "id": 5,
+      "name": "Pulp Fiction",
+      "image": "https://www.imdb.com/title/tt0110912/mediaviewer/rm1959546112/?ref_=tt_ov_i",
+      "director": "Quentin Tarantino",
+      "actors": ["John Travolta"," Uma Thurman", "Samuel L. Jackson"],
+      "genre": "Crime"
+    }
+  ]
+}

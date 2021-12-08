@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#CCCCCC">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:id="@+id/filmInfoLayout"
+        android:visibility="gone"
+        tools:context=".MainActivity"
+        android:background="#CCCCCC"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/filmName"
+            android:layout_marginBottom="10dp"
+            android:textColor="#3F51B5"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filmDirector"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#3F51B5"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filmActors"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#3F51B5"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filmGenre"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            android:textColor="#3F51B5"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click the 'Next Movie' Button to see the next Movie"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/infoField"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#3F51B5"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        tools:context=".MainActivity"
+        android:background="#CCCCCC"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onNext"
+            android:text="@string/next_movie"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/reset_movie"
+            android:onClick="onReset"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

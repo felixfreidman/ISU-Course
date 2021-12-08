@@ -1,0 +1,5 @@
+<resources>
+<string name="app_name">MyMovie</string>
+<string name="next_movie">Next Movie</string>
+<string name="reset_movie">Reset</string>
+</resources>
