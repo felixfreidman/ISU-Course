@@ -12,7 +12,6 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.gson.Gson
 import com.google.gson.JsonElement
-import com.squareup.picasso.Picasso
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.BufferedReader
@@ -23,28 +22,26 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
-
-    // views
+//  Views Init Section
     private lateinit var infoTextView: TextView
     private lateinit var movieNameView: TextView
     private lateinit var movieDirectorView: TextView
     private lateinit var movieActorsView: TextView
     private lateinit var movieGenreView: TextView
     private lateinit var movieInfoLayout: LinearLayout
-    // vatiables
-    private lateinit var movies_collection: MoviesCollection
-    lateinit var randomFilm: Number
-    private lateinit var movies_storage: SharedPreferences
-    // utilities
-    private val gson = Gson()
-    private val randomizer = Random()
-    private val picasso = Picasso.get()
+//  Variables Section
+    private lateinit var moviesCollection: MoviesCollection
+    lateinit var randomMovie: Number
+    private lateinit var moviesStorage: SharedPreferences
+//  Utility Section
+    private val gson = Gson() // TODO: learn how to customzie gson implementation
+    private val randomFunction = Random()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         InitViews()
-        movies_storage = this.getSharedPreferences("shown_movies", Context.MODE_PRIVATE)
+        moviesStorage = this.getSharedPreferences("movies_shown", Context.MODE_PRIVATE)
         initMovies()
     }
 
@@ -59,8 +56,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initMovies() {
         val stream = resources.openRawResource(R.raw.movies)
-        movies_collection = gson.fromJson(InputStreamReader(stream), MoviesCollection::class.java)
-        if (movies_storage.all.keys.size == movies_collection.movies.size) {
+        moviesCollection = gson.fromJson(InputStreamReader(stream), MoviesCollection::class.java)
+        if (moviesStorage.all.keys.size == moviesCollection.movies.size) {
             infoTextView.text = "All Movies were already shown"
         } else {
             infoTextView.text = "Click the 'Next Movie' Button to see the next Movie"
@@ -68,17 +65,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getRandomMovie(): Movie? {
-        if (movies_storage.all.keys.size == movies_collection.movies.size) {
+        if (moviesStorage.all.keys.size == moviesCollection.movies.size) {
             return null
         }
-        var movie_id: Int = movies_collection.movies[randomizer.nextInt(movies_collection.movies.size)].id
+        var movie_id: Int = moviesCollection.movies[randomFunction.nextInt(moviesCollection.movies.size)].id
         val EMPTY_SEARCH = "empty"
         while (true) {
-            val search: String? = movies_storage.getString(movie_id.toString(), EMPTY_SEARCH)
+            val search: String? = moviesStorage.getString(movie_id.toString(), EMPTY_SEARCH)
             if (search.equals(EMPTY_SEARCH)) {
-                return movies_collection.movies.find { it.id == movie_id }
+                return moviesCollection.movies.find { it.id == movie_id }
             }
-            movie_id = movies_collection.movies[randomizer.nextInt(movies_collection.movies.size)].id
+            movie_id = moviesCollection.movies[randomFunction.nextInt(moviesCollection.movies.size)].id
         }
     }
 
@@ -91,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             movieActorsView.text = rand_movie.actors.joinToString { it }
             movieGenreView.text = rand_movie.genre
 
-            movies_storage.edit().putString(rand_movie.id.toString(), rand_movie.name).apply()
+            moviesStorage.edit().putString(rand_movie.id.toString(), rand_movie.name).apply()
         } else {
             infoTextView.text = "All Movie were already shown"
             infoTextView.visibility = View.VISIBLE
@@ -103,7 +100,7 @@ class MainActivity : AppCompatActivity() {
         infoTextView.text = "Click the 'Next Movie' Button to see the next Movie"
         infoTextView.visibility = View.VISIBLE
         movieInfoLayout.visibility = View.GONE
-        movies_storage.edit().clear().apply()
+        moviesStorage.edit().clear().apply()
     }
 
 
