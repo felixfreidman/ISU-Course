@@ -1,0 +1,81 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mymovie"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+8-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:5:5-21:19
+12        android:allowBackup="true"
+12-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] /Users/felixfreidman/.gradle/caches/transforms-3/22fc58c1aba25a38624b19fcaec4a163/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/Theme.MyMovie" >
+21-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:11:9-45
+22        <activity
+22-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:12:9-20:20
+23            android:name="com.example.mymovie.MainActivity"
+23-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:13:13-41
+24            android:exported="true" >
+24-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:14:13-36
+25            <intent-filter>
+25-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:15:13-19:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:16:17-69
+26-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:16:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:18:17-77
+28-->/Users/felixfreidman/AndroidStudioProjects/MyMovie/app/src/main/AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <provider
+32-->[com.squareup.picasso:picasso:2.71828] /Users/felixfreidman/.gradle/caches/transforms-3/1fc8e7e3d4f4d0e9d43a2a0e80748bcf/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+33            android:name="com.squareup.picasso.PicassoProvider"
+33-->[com.squareup.picasso:picasso:2.71828] /Users/felixfreidman/.gradle/caches/transforms-3/1fc8e7e3d4f4d0e9d43a2a0e80748bcf/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+34            android:authorities="com.example.mymovie.com.squareup.picasso"
+34-->[com.squareup.picasso:picasso:2.71828] /Users/felixfreidman/.gradle/caches/transforms-3/1fc8e7e3d4f4d0e9d43a2a0e80748bcf/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+35            android:exported="false" />
+35-->[com.squareup.picasso:picasso:2.71828] /Users/felixfreidman/.gradle/caches/transforms-3/1fc8e7e3d4f4d0e9d43a2a0e80748bcf/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+36        <provider
+36-->[androidx.emoji2:emoji2:1.0.0] /Users/felixfreidman/.gradle/caches/transforms-3/f0fef0678a57aff454a268ff3683da91/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+37            android:name="androidx.startup.InitializationProvider"
+37-->[androidx.emoji2:emoji2:1.0.0] /Users/felixfreidman/.gradle/caches/transforms-3/f0fef0678a57aff454a268ff3683da91/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+38            android:authorities="com.example.mymovie.androidx-startup"
+38-->[androidx.emoji2:emoji2:1.0.0] /Users/felixfreidman/.gradle/caches/transforms-3/f0fef0678a57aff454a268ff3683da91/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+39            android:exported="false" >
+39-->[androidx.emoji2:emoji2:1.0.0] /Users/felixfreidman/.gradle/caches/transforms-3/f0fef0678a57aff454a268ff3683da91/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+40            <meta-data
+40-->[androidx.emoji2:emoji2:1.0.0] /Users/felixfreidman/.gradle/caches/transforms-3/f0fef0678a57aff454a268ff3683da91/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+41                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+41-->[androidx.emoji2:emoji2:1.0.0] /Users/felixfreidman/.gradle/caches/transforms-3/f0fef0678a57aff454a268ff3683da91/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+42                android:value="androidx.startup" />
+42-->[androidx.emoji2:emoji2:1.0.0] /Users/felixfreidman/.gradle/caches/transforms-3/f0fef0678a57aff454a268ff3683da91/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+43            <meta-data
+43-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/felixfreidman/.gradle/caches/transforms-3/18e5844b9a73a26185a74c5ff080299f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+44                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/felixfreidman/.gradle/caches/transforms-3/18e5844b9a73a26185a74c5ff080299f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+45                android:value="androidx.startup" />
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/felixfreidman/.gradle/caches/transforms-3/18e5844b9a73a26185a74c5ff080299f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+46        </provider>
+47    </application>
+48
+49</manifest>
