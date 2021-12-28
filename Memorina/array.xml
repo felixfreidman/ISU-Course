@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="cards_images">
+        <item>@drawable/photo1</item>
+        <item>@drawable/photo2</item>
+        <item>@drawable/photo3</item>
+        <item>@drawable/photo4</item>
+        <item>@drawable/photo5</item>
+        <item>@drawable/photo6</item>
+        <item>@drawable/photo5</item>
+        <item>@drawable/photo4</item>
+        <item>@drawable/photo3</item>
+        <item>@drawable/photo2</item>
+        <item>@drawable/photo1</item>
+    </integer-array>
+</resources>

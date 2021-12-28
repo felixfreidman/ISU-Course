@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/photo1"></item>
+    <item android:drawable="@drawable/photo2"></item>
+    <item android:drawable="@drawable/photo3"></item>
+    <item android:drawable="@drawable/photo4"></item>
+    <item android:drawable="@drawable/photo5"></item>
+    <item android:drawable="@drawable/photo6"></item>
+    <item android:drawable="@drawable/photo5"></item>
+    <item android:drawable="@drawable/photo4"></item>
+    <item android:drawable="@drawable/photo3"></item>
+    <item android:drawable="@drawable/photo2"></item>
+    <item android:drawable="@drawable/photo1"></item>
+</layer-list>
